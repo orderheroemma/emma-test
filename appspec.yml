@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/emma-test
-    overwrite: false
+    overwrite: true
 
 permissions:
   - object: /

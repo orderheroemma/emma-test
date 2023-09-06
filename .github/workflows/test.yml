@@ -19,12 +19,12 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Get previous commit SHA
-        run: git diff --name-only origin/main..origin/main^ > changed_files.txt
+      # - name: Get previous commit SHA
+      #   run: git diff --name-only origin/main..origin/main^ > changed_files.txt
 
       - name: Make zip file
-        run: zip ./$GITHUB_SHA.zip $(cat changed_files.txt) deploy.sh copy.sh appspec.yml
-#        run: zip -r ./$GITHUB_SHA.zip .
+        # run: zip ./$GITHUB_SHA.zip $(cat changed_files.txt) deploy.sh copy.sh appspec.yml
+        run: zip -r ./$GITHUB_SHA.zip .
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1-node16

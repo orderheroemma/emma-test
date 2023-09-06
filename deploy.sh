@@ -1,10 +1,8 @@
 #!/bin/bash
 
-DOCKER_APP_NAME=senior-nutrition
+DOCKER_APP_NAME=emma-test
 
-cp -rf ~/deployment/* ~/$DOCKER_APP_NAME
-
-cd /home/ec2-user/senior-nutrition
+cd /home/ec2-user/emma-test
 
 EXIST_CONTAINER=$(docker ps | grep $DOCKER_APP_NAME-main)
 

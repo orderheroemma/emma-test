@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  main:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: emma-test
+    volumes:
+      - /home/ec2-user/logs/:/var/logs
+      - /home/ec2-user/emma-test/:/home/emma-test
+    ports:
+      - "80:80"
+      - "443:443"
+      - "23:22"
+    privileged: true

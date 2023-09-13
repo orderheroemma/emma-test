@@ -8,7 +8,6 @@ $db_name = "emma";
 
 $conn = pg_connect("$db_host $db_port $dd_user $db_password $db_name");
 
-//var_dump($conn);
 
 $query = "SELECT * FROM test";
 $result = pg_query($conn, $query);

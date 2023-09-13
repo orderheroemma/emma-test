@@ -5,7 +5,7 @@ $db_host = "host=emma.cpf6y5ls20wt.ap-northeast-2.rds.amazonaws.com";
 $db_port = "port=5432";
 $db_user = "user=postgres";
 $db_password = "password=12345678";
-$db_name = "emmatest";
+$db_name = "dbname=emma";
 
 // pg_connect() 함수는 연결 문자열을 하나의 문자열로 전달해야 합니다.
 $connection_string = "$db_host $db_port $db_user $db_password $db_name";

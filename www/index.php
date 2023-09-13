@@ -8,12 +8,14 @@ $db_name = "emma";
 
 $conn = pg_connect("$db_host $db_port $dd_user $db_password $db_name");
 
-$query = "SELECT * FROM test";
-$result = pg_query($conn, $query);
-$db_result = "";
-
-while ($row = pg_fetch_assoc($result)) {
-  $db_result = $row['test'];
-}
-
-echo "".$db_result;
+var_dump($conn);
+//
+//$query = "SELECT * FROM test";
+//$result = pg_query($conn, $query);
+//$db_result = "";
+//
+//while ($row = pg_fetch_assoc($result)) {
+//  $db_result = $row['test'];
+//}
+//
+//echo "".$db_result;
